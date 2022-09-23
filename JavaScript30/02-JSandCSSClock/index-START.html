@@ -63,12 +63,28 @@
       position: absolute;
       top: 50%;
     }
+    </style>
 
-  </style>
+    <script>                                                                      
+      const hourHand = document.getElementsByClassName('hour-hand');
+      const minHand = document.getElementsByClassName('minute-hand');
+      const secHand = document.getElementsByClassName('second-hand');
+      console.log(hourHand);
+      console.log(minHand);
+      console.log(secHand);
 
-  <script>
+      let curDate = new Date();
+      let curHour = curDate.getHours();
+      let curMin = curDate.getMinutes();
+      let curSec = curDate.getSeconds();
+      console.log(curHour);
+      console.log(curMin);
+      console.log(curSec);
+      console.log((curHour+1)*6);
+      console.log((curMin+1)*6);
+      console.log((curSec+1)*6);
 
-
-  </script>
+      
+    </script>
 </body>
 </html>
