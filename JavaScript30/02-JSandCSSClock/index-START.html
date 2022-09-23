@@ -80,6 +80,7 @@
 
     function handUpdate() {
       let date = new Date();
+      
       let hour = date.getHours();
       let min = date.getMinutes();
       let sec = date.getSeconds();
@@ -97,6 +98,7 @@
       minHand.style.transform = `rotate(${minDeg}deg)`;
       secHand.style.transform = `rotate(${secDeg}deg)`;
     }
+
     setInterval(handUpdate, 10);
     </script>
 </body>
